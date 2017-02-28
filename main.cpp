@@ -33,7 +33,7 @@ void BinarySearch(int * random_pick, int * uniq_array);
 
 /*Sizes*/
 int c = pow(10, 3); // size of random pick array
-int b = pow(10, 8); // size of unique random array 
+int b = pow(10, 6); // size of unique random array 
 int a = pow(2, 31) - 1; // Range of Numbers
 int index = 8; // Only used during the sequential search with indexing. 
                //must match the power of the size of the unique number array. 
@@ -46,7 +46,8 @@ std::unordered_map<int, int> intmap;
 
 int main() {
     srand(time(NULL));
-
+   // cout<<RAND_MAX<<endl; // make sure your rand has a range of 0 to (2^31)-1.
+    
     for (int k = 99; k < 100; k++) { // Controls how many loops the program will
                                      //run through
 
